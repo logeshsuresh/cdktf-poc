@@ -1,8 +1,8 @@
-import { Construct } from "constructs";
 import { App, TerraformStack } from "cdktf";
+import { Construct } from "constructs";
 import { GoogleProvider } from "@cdktf/provider-google/lib/provider";
 import { ProjectIamMember } from "@cdktf/provider-google/lib/project-iam-member";
-import { CREDENTIALS_PATH, GOOGLE_PROJECT_ID, GOOGLE_REGION  } from "./config";
+import { CREDENTIALS_PATH, GOOGLE_PROJECT_ID, GOOGLE_REGION } from "./config";
 
 class MyStack extends TerraformStack {
   constructor(scope: Construct, id: string) {
